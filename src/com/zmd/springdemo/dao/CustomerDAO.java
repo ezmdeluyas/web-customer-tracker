@@ -6,7 +6,7 @@ import com.zmd.springdemo.entity.Customer;
 
 public interface CustomerDAO {
 	
-	public List<Customer> getCustomers();
+	public List<Customer> getCustomers(int sortField);
 
 	public void save(Customer customer);
 
