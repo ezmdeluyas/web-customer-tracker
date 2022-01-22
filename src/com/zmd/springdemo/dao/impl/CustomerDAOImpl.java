@@ -101,7 +101,7 @@ public class CustomerDAOImpl implements CustomerDAO {
         //
         if (theSearchName != null && theSearchName.trim().length() > 0) {
             // search for firstName or lastName ... case insensitive
-            theQuery = currentSession.createQuery("from Customer where lower(firstName) like :theName or lower(lastName) like :theName order by lastName, firstName", Customer.class);
+            theQuery = currentSession.createQuery("from Customer where lower(firstName) like :theName or lower(lastName) like :theName order by lastName", Customer.class);
             theQuery.setParameter("theName", "%" + theSearchName.toLowerCase() + "%");
         }
         else {
