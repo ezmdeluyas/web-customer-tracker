@@ -45,3 +45,7 @@ tr:nth-child(odd) {background: #BBBBBB}
 	margin-bottom: 15px;
 	background: #cccccc;
 }
+
+.error {
+	color:red
+}
